@@ -89,7 +89,7 @@
   cursor: pointer;
   border-width: 5px 5px 0 0;
   border-style: solid;
-  border-color: #fafafa;
+  border-color: #888888;
   opacity: 0.35;
   opacity: 1;
   outline: 0;
@@ -169,13 +169,16 @@
   width: 30px;
 }
 .carousel__indicator {
-  background-color: #fafafa;
+  background-color: #888888;
 }
 {% for item in page.carousels[number].images %}
 .carousel__slide:nth-of-type({{ forloop.index }}),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type({{ forloop.index }}) {
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
+  background-origin: content-box;
+  padding: 0 60px;
 }
 {% endfor %}
 </style>

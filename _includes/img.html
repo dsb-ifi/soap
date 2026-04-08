@@ -1,2 +1,4 @@
-{{=<% %>=}}<img alt="{{include.alt}}" loading="lazy" src="/assets/images/{{include.src}}" />
-<em>{{include.caption}}</em>
+{{=<% %>=}}<div style="margin: 2rem 0; text-align: center;">
+<img alt="{{include.alt}}" loading="lazy" src="/assets/images/{{include.src}}" style="width: {{include.width | default: '100%'}};" />
+<em style="display: block; margin-top: 0.5rem;">{{include.caption | markdownify}}</em>
+</div>
