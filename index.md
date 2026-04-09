@@ -113,21 +113,23 @@ This projection can be used to "correct" the patch representations $\hat z = P_\
 We analyze popular SSL models by measuring their Semantic Invariance, and find a striking contrast between models trained with and without a MIM-style objective.
 The main findings are summarized by the plots below. Models with MIM are shown in solid lines; models without MIM are shown in dashed lines.
 
-<!-- the images are loading automatically from the assets/image folder -->
-{% include img.html src='si_score_plots.png' alt='Image from include' caption='**Figure 2:** Semantic invariance (SI) score in descending order. All scores are shown in the left plot, while the right focuses on the top 10
-semantically invariant scores.' %}
+![SI scores plots]({{ site.image_base_path | append: "si_score_plots.png" | absolute_url }}) 
+
+{: .figure-caption}
+**Figure 2:** Semantic invariance (SI) score in descending order. All scores are shown in the left plot, while the right focuses on the top 10 semantically invariant scores.
 
 
 The models trained with MIM have at least two principal components with high SI score ($\geq 0.75$). 
 Upon manual inspection, we find that these components encode positional infomation about the patch location.
 Critically, DINO and DeiT3, which are not trained with MIM, do not exhibit the same behaviour and have lower SI scores in general ($\leq 0.75$).
-<!-- Out of all models in our study, the Masked Autoencoder (MAE) exhibits the highest semantic invariance. -->
 
 Looking at the maxumim SI score of each transformer block, we see that while some MIM-models (DINOv2 and DINOv3) have lower SI scores in earlier layers, there is a sharp increase in the last layers, where all MIM-models land well above the $0.75$ threshold.
 This can be explained as the model saturating more positional information into the embeddings in preparation for solving the MIM task.
 
+<img src="{{ site.image_base_path | append: 'si_score_per_layer.png' | absolute_url }}" alt="SI score vs. depth" style="width: 70%; display: block; margin: auto;">
 
-{% include img.html src='si_score_per_layer.png' alt='Image from include' width='70%' caption='**Figure 3:** Maximum semantic invariance score for MIM models (solid lines) and non-MIM models (dashed lines) vs. model depth. Critically, MIM models show high SI-scores in the last layers. This can be explained by the MIM objective encouraging positional information in the patch embeddings of deeper layers. ' %}
+{: .figure-caption}
+**Figure 3:** Maximum semantic invariance score for MIM models (solid lines) and non-MIM models (dashed lines) vs. model depth. Critically, MIM models show high SI-scores in the last layers. This can be explained by the MIM objective encouraging positional information in the patch embeddings of deeper layers. 
 
 ## SOAP improves zero-shot performance
 
