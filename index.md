@@ -18,7 +18,10 @@ authors:
     link: https://www.rwchakra.com
     affiliation: 2, 3
   - name: Gabriel Y. Arteaga
-    link: https://www.mn.uio.no/ifi/english/people/aca/gabrieya/
+    link: https://gabriel-arteaga.github.io
+    affiliation: 1
+  - name: Changkyu Choi
+    link: https://www.linkedin.com/in/changkyu-choi-dk78042/
     affiliation: 1
   - name: Adín Ramirez Rivera
     link: https://www.mn.uio.no/ifi/english/people/aca/adinr/
