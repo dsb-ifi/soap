@@ -8,16 +8,13 @@
 **[DSB @ IFI @ UiO](https://www.mn.uio.no/ifi/english/research/groups/dsb/)** <br>
 
 [![Website](https://img.shields.io/badge/Website-green)](https://dsb-ifi.github.io/soap/)
-[![PaperArxiv](https://img.shields.io/badge/Paper-arXiv-red)](https://arxiv.org/abs/2507.01654) <br>
-<!-- [![PaperICCVW](https://img.shields.io/badge/Paper-ICCVW_2025-blue)](https://eclr-workshop.github.io/)
-[![NotebookExample](https://img.shields.io/badge/Notebook-Example-orange)](https://nbviewer.jupyter.org) <br> -->
+[![PaperArxiv](https://img.shields.io/badge/Paper-arXiv-red)](https://arxiv.org/abs/2604.00172) <br>
 
-![SPoT Figure 1](/assets/images/pos_noise_compact.png#gh-light-mode-only "Examples of positional noise in principal components (PC) of MIM models")
-![SPoT Figure 1](/assets/images/pos_noise_compact.png#gh-dark-mode-only "Examples of positional noise in principal components (PC) of MIM models")
+![Figure 1](/assets/images/pos_noise_compact.png#gh-light-mode-only "Examples of positional noise in principal components (PC) of MIM models")
+![Figure 1](/assets/images/pos_noise_compact.png#gh-dark-mode-only "Examples of positional noise in principal components (PC) of MIM models")
 
 </div>
 
-## SPoT: Subpixel Placement of Tokens
 
 This repo contains code and weights for **Suppressing Non-Semantic Noise in Masked Image Modeling Representations**, accepted for CVPR 2026.
 
@@ -25,7 +22,7 @@ For an introduction to our work, visit the [project webpage](https://dsb-ifi.git
 
 ## Installation
 
-The package can currently be installed via:
+The package can be installed via:
 
 ```bash
 # HTTPS
@@ -37,7 +34,7 @@ pip install git+ssh://git@github.com/dsb-ifi/soap.git
 
 ## Measuring Semantic Invariance and Using SOAP
 
-We provide a [Jupyter notebook](./get_started.ipynb) that illustrates ...
+We provide a [Jupyter notebook](./notebook.ipynb) that illustrates how to get started with calculating the SI score and SOAP, and gives an example usecase for salient segmentation.
 
 ## Citation
 
