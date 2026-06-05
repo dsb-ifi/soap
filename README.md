@@ -41,7 +41,7 @@ We provide a [Jupyter notebook](./notebook.ipynb) that illustrates how to get st
 If you find our work useful, please consider citing our paper.
 
 ```
-@inproceedings{hjelkremtan2025soap,
+@inproceedings{hjelkremtan2026soap,
   title={Suppressing Non-Semantic Noise in Masked Image Modeling Representations},
   author={Hjelkrem-Tan, Martine and Aasan, Marius and Chakraborty, Rwiddhi and Arteaga, Gabriel Y. and Choi, Changkyu and Ram\'irez Rivera, Ad\'in},
   booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
